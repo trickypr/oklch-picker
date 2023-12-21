@@ -1,0 +1,32 @@
+{
+  "name": "oklch-picker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "source": "src/main.ts",
+  "exports": {
+    ".": "./dist/oklch-picker.modern.js",
+    "./bundle": "./dist/bundle/oklch-picker.modern.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "microbundle && microbundle --external none --output dist/bundle",
+    "demo:build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "prettier ./src/ --write"
+  },
+  "devDependencies": {
+    "@types/culori": "^2.0.4",
+    "microbundle": "^0.15.1",
+    "prettier": "^3.1.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "dependencies": {
+    "culori": "^3.3.0"
+  }
+}
