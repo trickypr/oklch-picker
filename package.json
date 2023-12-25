@@ -1,6 +1,6 @@
 {
   "name": "@trickypr/oklch-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "source": "src/main.ts",
   "exports": {
@@ -27,5 +27,6 @@
   },
   "dependencies": {
     "culori": "^3.3.0"
-  }
+  },
+  "files": ["dist/**/*"]
 }
