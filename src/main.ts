@@ -37,6 +37,10 @@ class OklchPicker extends HTMLElement {
   }
 
   connectedCallback() {
+    // Skip recalls. Can cause some really obscure errors, Although I am not sure if those errors are actually a
+    // problem
+    if (this.clCanvas && this.hCanvas) return
+
     const shadow = this.attachShadow({ mode: 'open' })
 
     this.clCanvas = document.createElement('canvas')
