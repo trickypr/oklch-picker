@@ -1,7 +1,6 @@
 {
-  "name": "oklch-picker",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@trickypr/oklch-picker",
+  "version": "1.0.0",
   "type": "module",
   "source": "src/main.ts",
   "exports": {
